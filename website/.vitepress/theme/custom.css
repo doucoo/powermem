@@ -1,0 +1,175 @@
+/* PowerMem accent colors — purple/violet theme */
+:root {
+  --vp-c-accent: #7c3aed;
+  --vp-c-accent-light: #8b5cf6;
+  --vp-c-accent-lighter: #a78bfa;
+  --vp-c-accent-dark: #6d28d9;
+  --vp-c-accent-darker: #5b21b6;
+
+  /* Brand = accent for VitePress brand buttons */
+  --vp-c-brand-1: #7c3aed;
+  --vp-c-brand-2: #6d28d9;
+  --vp-c-brand-3: #8b5cf6;
+  --vp-c-brand-soft: rgba(124, 58, 237, 0.1);
+
+  /* Typography */
+  --vp-font-family-base: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --vp-font-family-mono: 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* Dark theme */
+.dark {
+  --vp-c-bg: #0f0f1a;
+  --vp-c-bg-soft: #1a1a2e;
+  --vp-c-bg-mute: #2d2b55;
+  --vp-c-bg-elv: #1a1a2e;
+  --vp-c-bg-alt: #0f0f1a;
+
+  --vp-c-text-1: #e2e8f0;
+  --vp-c-text-2: #c7d2e0;
+  --vp-c-text-3: #8892a6;
+
+  --vp-c-divider: #2d2b55;
+  --vp-c-border: #2d2b55;
+  --vp-c-gutter: #0f0f1a;
+
+  --vp-sidebar-bg-color: #1a1a2e;
+  --vp-nav-bg-color: #0f0f1a;
+  --vp-c-bg-flyout: #1a1a2e;
+}
+
+/* Custom button styles */
+.VPButton.brand {
+  background-color: var(--vp-c-accent);
+  border-color: var(--vp-c-accent);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.VPButton.brand:hover {
+  background-color: var(--vp-c-accent-light);
+  border-color: var(--vp-c-accent-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.35);
+}
+
+.VPButton.alt:hover {
+  border-color: var(--vp-c-accent);
+  color: var(--vp-c-accent);
+}
+
+/* Hero image: swap to dark logo when in dark mode */
+.dark .VPHero .image-src {
+  content: url('/logo-dark.svg');
+}
+
+/* Feature cards */
+.VPFeature {
+  transition: all 0.3s ease;
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-accent) !important;
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Code block */
+.vp-code {
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.9em;
+}
+
+/* Hero */
+.VPHero .tagline {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .VPHero .tagline {
+    font-size: 1.25rem;
+  }
+}
+
+/* Benchmark stat cards */
+.benchmark-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: var(--vp-c-accent);
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.15);
+}
+
+.stat-card .stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--vp-c-accent);
+}
+
+.stat-card .stat-label {
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  margin-top: 0.5rem;
+}
+
+/* Integration grid */
+.integration-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.integration-card {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.integration-card:hover {
+  border-color: var(--vp-c-accent);
+  transform: translateY(-2px);
+}
+
+/* Hide VitePress attribution in footer */
+.VPFooter a[href*="vitepress.dev"],
+.VPFooter span:has(> a[href*="vitepress.dev"]) {
+  display: none;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-divider);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-accent);
+}
