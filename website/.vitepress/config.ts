@@ -88,6 +88,7 @@ export default defineConfig({
   title: 'PowerMem',
   description: 'Persistent, self-evolving memory for AI agents — Accurate, Agile, Affordable',
 
+  base: '/powermem/',
   cleanUrls: true,
 
   head: [
