@@ -93,8 +93,8 @@ export default defineConfig({
   head: [
     ['meta', { name: 'theme-color', content: '#7c3aed' }],
     ['meta', { name: 'og:type', content: 'website' }],
-    ['meta', { name: 'og:image', content: '/logo-light.png' }],
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { name: 'og:image', content: '/logo-light.svg' }],
+    ['link', { rel: 'icon', href: '/logo.svg' }],
   ],
 
   locales: {
