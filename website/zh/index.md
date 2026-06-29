@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "PowerMem"
-  text: "AI 记忆插件"
-  tagline: "持久化、自进化的 AI Agent 记忆 — 精准、敏捷、实惠"
+  text: "为 AI 应用构建"
+  tagline: "持久化记忆"
   image:
     src: /logo-light.svg
     alt: PowerMem
@@ -17,41 +17,29 @@ hero:
       link: https://github.com/oceanbase/powermem
 
 features:
+  - icon: 👨‍💻
+    title: "开发者友好"
+    details: "简洁的 Python SDK，自动从 .env 加载配置。同时支持 MCP Server 和 HTTP API Server 两种接入方式。"
+
   - icon: 🧠
-    title: "混合检索"
-    details: "向量 + 全文 + 图谱三路检索，RRF 融合排序，无需额外胶水代码"
-
-  - icon: 🔄
-    title: "自进化记忆"
-    details: "两层经验 + 技能蒸馏，让 Agent 从交互中学习可复用的工作流"
-
-  - icon: 📉
-    title: "艾宾浩斯遗忘"
-    details: "R = e^(-t/S) 时间衰减 + 访问强化，记忆保持新鲜而非静态堆积"
+    title: "智能记忆管理"
+    details: "LLM 驱动的自动提取、重复检测、冲突解决，以及基于认知科学的艾宾浩斯时间衰减加权。"
 
   - icon: 🤖
-    title: "多智能体隔离"
-    details: "私有、共享、公开三种作用域，支持 Agent 组和用户组级别隔离"
+    title: "Multi-Agent 支持"
+    details: "每个 Agent 独立的记忆空间，支持跨 Agent 共享与协作，通过 scope 控制实现灵活权限管理。"
+
+  - icon: 🌐
+    title: "多模态支持"
+    details: "文本、图片、音频记忆，自动转换为文本描述存储，支持多模态混合内容检索。"
+
+  - icon: 🗄️
+    title: "深度优化的数据存储"
+    details: "子存储分区管理与自动路由。向量 + 全文 + 图谱多通道召回，精确检索复杂记忆关系。"
 
   - icon: 🔌
     title: "全平台集成"
-    details: "Claude Code、Cursor、VS Code、Codex、Windsurf、LangChain 等一线插件原生支持"
-
-  - icon: 🌐
-    title: "多模态信号"
-    details: "文本、图片、音频多模态处理，支持 OpenAI、Qwen、Gemini、Ollama 等嵌入模型"
-
-  - icon: ⚡
-    title: "生产级就绪"
-    details: "Python SDK、HTTP API、MCP Server、CLI、Web 面板 — 同一后端，任意接入方式"
-
-  - icon: 🗄️
-    title: "灵活存储"
-    details: "OceanBase（嵌入式 seekdb）、PostgreSQL + pgvector、SQLite — 从开发笔记本到生产集群"
-
-  - icon: 📊
-    title: "Benchmark 验证"
-    details: "LOCOMO 准确率 87.79%（+65.9%），检索延迟降低 91.6%，Token 消耗节省 96.5%"
+    details: "Claude Code、Cursor、VS Code、Codex、Windsurf、LangChain 等一线插件原生支持。"
 ---
 
 ## 为什么选 PowerMem？

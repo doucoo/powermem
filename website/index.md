@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "PowerMem"
-  text: "AI Memory Plugin"
-  tagline: "Persistent, self-evolving memory for AI agents — Accurate, Agile, Affordable"
+  text: "Build Persistent Memory"
+  tagline: "for AI Applications"
   image:
     src: /logo-light.svg
     alt: PowerMem
@@ -17,41 +17,29 @@ hero:
       link: https://github.com/oceanbase/powermem
 
 features:
+  - icon: 👨‍💻
+    title: "Developer Friendly"
+    details: "Simple Python SDK with .env auto-config. Also supports MCP Server and HTTP API Server integration."
+
   - icon: 🧠
-    title: "Hybrid Retrieval"
-    details: "Vector + full-text + graph search fused together with RRF scoring — no custom glue needed"
-
-  - icon: 🔄
-    title: "Self-Evolving Memory"
-    details: "Two-layer Experience + Skill distillation lets agents learn reusable workflows from interactions"
-
-  - icon: 📉
-    title: "Ebbinghaus Decay"
-    details: "R = e^(-t/S) time-based forgetting with reinforcement — memories stay useful, not stale"
+    title: "Intelligent Memory Management"
+    details: "LLM-driven extraction, duplicate detection, conflict resolution, and Ebbinghaus-style time-decay weighting."
 
   - icon: 🤖
-    title: "Multi-Agent Isolation"
-    details: "Private, shared, and public scopes with agent-group and user-group isolation built in"
+    title: "Multi-Agent Support"
+    details: "Independent memory spaces per agent, cross-agent sharing and collaboration with flexible scope control."
+
+  - icon: 🌐
+    title: "Multimodal Support"
+    details: "Text, image, and audio memory with automatic conversion to text descriptions for storage and retrieval."
+
+  - icon: 🗄️
+    title: "Deeply Optimized Storage"
+    details: "Sub-store partitioning with auto-routing. Vector + full-text + graph retrieval for complex memory relationships."
 
   - icon: 🔌
     title: "Universal Integration"
-    details: "First-party plugins for Claude Code, Cursor, VS Code, Codex, Windsurf, LangChain, and more"
-
-  - icon: 🌐
-    title: "Multimodal Signals"
-    details: "Text, image, and audio processing with multiple embedding providers (OpenAI, Qwen, Gemini, Ollama)"
-
-  - icon: ⚡
-    title: "Production Ready"
-    details: "Python SDK, HTTP API, MCP server, CLI, Web Dashboard — same backend, any interface"
-
-  - icon: 🗄️
-    title: "Flexible Storage"
-    details: "OceanBase (embedded seekdb), PostgreSQL + pgvector, SQLite — from dev laptop to production cluster"
-
-  - icon: 📊
-    title: "Benchmark Proven"
-    details: "87.79% accuracy on LOCOMO (+65.9%), 91.6% latency reduction, 96.5% token savings"
+    details: "First-party plugins for Claude Code, Cursor, VS Code, Codex, Windsurf, LangChain, and more."
 ---
 
 ## Why PowerMem?

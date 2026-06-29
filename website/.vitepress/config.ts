@@ -157,6 +157,8 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/oceanbase/powermem' },
+      { icon: 'x', link: 'https://x.com/OceanBaseDB' },
+      { icon: 'discord', link: 'https://discord.com/invite/74cF8vbNEs' },
     ],
   },
 
